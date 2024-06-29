@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimulasiFragment">
+
+    <EditText
+        android:id="@+id/editGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Input Gender (0 for Female, 1 for Male)"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Age (8 - 80)"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editGender"
+        app:layout_constraintStart_toStartOf="@+id/editGender"
+        app:layout_constraintTop_toBottomOf="@+id/editGender"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editHypertension"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Hypertension (0 for No, 1 for Yes)"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editAge"
+        app:layout_constraintStart_toStartOf="@+id/editAge"
+        app:layout_constraintTop_toBottomOf="@+id/editAge"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editHeartDisease"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Heart Disease (0 for No, 1 for Yes)"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editHypertension"
+        app:layout_constraintStart_toStartOf="@+id/editHypertension"
+        app:layout_constraintTop_toBottomOf="@+id/editHypertension"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editSmokingHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Smoking History (0-5)"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editHeartDisease"
+        app:layout_constraintStart_toStartOf="@+id/editHeartDisease"
+        app:layout_constraintTop_toBottomOf="@+id/editHeartDisease"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editBMI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input BMI (0 - 67.1)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editSmokingHistory"
+        app:layout_constraintStart_toStartOf="@+id/editSmokingHistory"
+        app:layout_constraintTop_toBottomOf="@+id/editSmokingHistory"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editHbA1cLevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input HbA1c Level (0.0 - 20.0)"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editBMI"
+        app:layout_constraintStart_toStartOf="@+id/editBMI"
+        app:layout_constraintTop_toBottomOf="@+id/editBMI"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editBloodGlucoseLevel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Input Blood Glucose Level (0 - 300)"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/editHbA1cLevel"
+        app:layout_constraintStart_toStartOf="@+id/editHbA1cLevel"
+        app:layout_constraintTop_toBottomOf="@+id/editHbA1cLevel"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/babyblue"
+        android:text="PREDICT"
+        app:layout_constraintEnd_toEndOf="@+id/editBloodGlucoseLevel"
+        app:layout_constraintStart_toStartOf="@+id/editBloodGlucoseLevel"
+        app:layout_constraintTop_toBottomOf="@+id/editBloodGlucoseLevel" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnCheck"
+        app:layout_constraintStart_toStartOf="@+id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheck"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

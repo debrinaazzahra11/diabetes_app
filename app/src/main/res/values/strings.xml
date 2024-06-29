@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Diabetes App</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="nav_tentang_title">Tentang Aplikasi</string>
+    <string name="penjelasan_dataset">Penjelasan Dataset</string>
+    <string name="nav_dataset_title">Dataset</string>
+    <string name="sumber_dataset">Sumber Dataset</string>
+    <string name="sumber">https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset</string>
+    <string name="nav_fitur_title">Fitur</string>
+    <string name="nav_model_title">Model</string>
+    <string name="nav_simulasimodel_title">Simulasi Model</string>
+
+    <string name="tentang_aplikasi">Dataset ini berisi 10000 baris dan 9 kolom yang memuat informasi terkait individu dan faktor resiko penyakit diabetes, data tersebut
+                                    mencakup informasi seperti jenis kelamin, usia, hipertensi, penyakit jantung, riwayat merokok, bmi, hemoglobin, dan
+                                    glukosa. Variabel target menunjukkan apakah seseorang mempunyai penyakit diabetes atau tidak</string>
+    <string name="deskripsi">Aplikasi Diabetes ini adalah aplikasi yang dibuat untuk memprediksi seseorang menderita diabetes atau tidak.</string>
+    <string name="gender">Gender mengacu pada jenis kelamin biologis seseorang.</string>
+    <string name="age">Usia merupakan faktor penting karena diabetes lebih sering didiagnosis pada orang dewasa yang lebih tua.</string>
+    <string name="hipertensi">Hipertensi adalah suatu kondisi medis di mana tekanan darah di arteri terus meningkat.</string>
+    <string name="jantung">Penyakit jantung adalah kondisi medis lain yang dikaitkan dengan peningkatan risiko diabetes.</string>
+    <string name="bmi">BMI (Indeks Massa Tubuh) adalah ukuran lemak tubuh berdasarkan berat dan tinggi badan.</string>
+    <string name="hb">Kadar HbA1c (Hemoglobin A1c) merupakan ukuran rata-rata kadar gula darah seseorang selama 2-3 bulan.</string>
+    <string name="gula">Kadar glukosa darah mengacu pada jumlah glukosa dalam aliran darah pada waktu tertentu.</string>
+    <string name="smoking">Riwayat merokok juga dianggap sebagai faktor risiko diabetes dan dapat memperburuk komplikasi.</string>
+    <string name="step1">1. Masukkan data kesehatan Anda pada form yang tersedia.</string>
+    <string name="step2">2. Tekan tombol \'Prediksi\' untuk melihat hasil prediksi.</string>
+    <string name="step3">3. Aplikasi akan menampilkan hasil prediksi apakah Anda berisiko menderita diabetes atau tidak.</string>
+    <string name="step4">4. Berdasarkan hasil prediksi, pertimbangkan untuk berkonsultasi dengan profesional kesehatan untuk pemeriksaan lebih lanjut.</string>
+    <string name="arsitektur">Model ini memiliki lapisan input untuk 8 fitur. Layer Dense pertama model ini memiliki 32 neuron dan diikuti oleh layer dropout dengan rasio 0.5,
+                            lalu ada layer dense dengan masing-masing 32 dan 326 neuron dengan fungsi aktivasi ReLu. Akurasi model sebesar 94%.</string>
+    <string name="akurasi">Hasil akurasi model yang digunakan adalah 94%</string>
+    <string name="Desc_home">Aplikasi ini bertujuan untuk mengetahui apakah seseorang terdeteksi mengidap penyakit diabetes apa tidak:</string>
+    <string name="cara">1. Input Nilai : Masukkan nilai-nilai pada form input untuk pasien yang ingin di prediksi</string>
+    <string name="cara2">2. Proses Prediksi : Setelah semua nilai input dimasukkan, aplikasi akan menggunakan model yang telah dilatih untuk memproses data tersebut.</string>
+    <string name="cara3">3. Hasil Prediksi : Aplikasi akan memberikan output berupa prediksi apakah pasien menderita diabetes atau tidak.</string>
+</resources>

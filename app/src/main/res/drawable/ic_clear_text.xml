@@ -1,0 +1,5 @@
+<!-- ic_clear_text.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:drawable/ic_menu_close_clear_cancel"
+        android:gravity="end|center_vertical" />
+</layer-list>
